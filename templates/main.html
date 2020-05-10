@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>SalonEverywhere</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <header>
+        <h1>Welcome to SalonEverywhere</h1>
+    </header>
+    <script>
+        function showAlert(){
+            alert("Link has successfully sent to your Email account")
+        }
+    </script>
+    <body>     
+        <div class="login">
+            <h3> Pre-Appointment COVID Screening </h3>
+            <form action="{{url_for('getLink')}}" method="POST">
+                <input type="email" name="email" placeholder="E-Mail" required="required" />
+                <input type="tel" name="number" placeholder="Phone Number" required="required" />   
+                <button type="submit" onclick="showAlert()" class="btn btn-primary btn-block btn-large">Get Link</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>

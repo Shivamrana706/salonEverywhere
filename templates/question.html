@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>SalonEverywhere</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="static\css\questionStyle.css">
+    </head>
+    <header>
+        <h1>Welcome to SalonEverywhere</h1>
+    </header>
+    <body>
+        <br>
+        <table>
+        <form action="{{url_for('thankyou')}}">
+            <div class="">
+                <tr> 
+                    <td>
+                        <h4><b><i>1. Do you have any of the symptoms or signs?</i></b></h4>
+                        <div class="radio">
+                            <label for="q1-1">New or worsening cough:</label>
+                            <label>
+                                <input type="radio" name="q1-1" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-1" id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-2">Shortness of breath :</label>
+                            <label>
+                                <input type="radio" name="q1-2" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-2"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        
+                
+                        <div class="radio">
+                            <label for="q1-3">Sore throat :</label>
+                            <label>
+                                <input type="radio" name="q1-3" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-3"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-4">Runny nose, sneezing or nasal congestion(in absence of underlying reasons for symptoms such as seasonal allergies and post nasal drip:</label>
+                            <label>
+                                <input type="radio" name="q1-4" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-4"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-5">Hoarse voice : </label>
+                            <label>
+                                <input type="radio" name="q1-5" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-5"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-6">Difficulty swallowing : </label>
+                            <label>
+                                <input type="radio" name="q1-6" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-6"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-7">New smell or taste disorder(s) : </label>
+                            <label>
+                                <input type="radio" name="q1-7" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-7"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-8">Nausea/vomiting, diarrhea, abdominal pain : </label>
+                            <label>
+                                <input type="radio" name="q1-8" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-8"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-9">Unexplained fatigue/malaise : </label>
+                            <label>
+                                <input type="radio" name="q1-9" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-9"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-10">Chills : </label>
+                            <label>
+                                <input type="radio" name="q1-10" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-10"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="q1-11">Headache : </label>
+                            <label>
+                                <input type="radio" name="q1-11" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="q1-11"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </td> 
+                <td>
+                    <div class="">
+                        <label for="q2"><h4><b><i>2. Do you have any of the symptoms or signs? </i></b></h4></label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q2" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q2"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="q3"><h4><b><i>3. Do you have a fever?</i></b></h4></label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q3" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q3"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="q4"><h4><b><i>4. Have you had close contact with anyone with respiratory illness or a confirmed or probable case of COVID-19? </i></b></h4></label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q4" id="optionsRadios1" value="yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="q4"  id="optionsRadios2" value="no">
+                                No
+                            </label>
+                        </div>
+                    </div>    
+                </td>
+            </tr>
+        </table>            
+            <button type="submit"  class="btn btn-primary">Submit</button>
+        </br>    
+        </form>    
+    </body>
+    <footer>
+        <h4><br></h4>
+    </footer>
+</html>
