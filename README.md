@@ -1,4 +1,4 @@
-# salonEverywhere
+# SalonEverywhere
 
 
 Heroku Link : https://saloneverywhere.herokuapp.com/
